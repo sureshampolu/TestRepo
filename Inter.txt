@@ -1,0 +1,258 @@
+Encapsulation:
+
+Binding code and data together is called encapsulation
+
+Abstraction:
+
+Hiding actual code and showing only functionality is called abstraction
+
+Inheritance:
+
+Code reusability. Getting properties and behaviour from parent objects are called inheritance
+
+Polymorphism:
+
+Doing one task in different ways is called polymorphism.
+
+Object: An entity that has state and behaviour is called object.
+
+Class: Collection of objects 
+
+public class void main - It is a core method of the program.
+
+Selenium Locators:
+
+By ID
+By Xpath
+By Css Selector
+By Tagname
+By LinkText
+By PartialLinkText
+By Name
+
+What is Xpath:
+
+Xpath can be used to locate web elements in selenium. 
+
+Single slash for creating absolute xpath and double slash for creating relative xpath
+
+Absolute xpath starts from the start node whereas relative xpath can start selection from anywhere on the page.
+
+
+Selenium - is a most widely used web automation tool which supports automation across different browsers and programming languages
+
+Jason Huggings developed this tool in 2004.
+
+Assertion: It is used as Verification point. 
+
+FindElement: Is used to find first element within the page using the given locating mechanism.
+
+FiledElements: Is used to find all elements within the current page.
+
+Implicit Wait: Waits for a certain amount of time before it throws "NoSuchElementException".
+
+Explicit Wait: Waits for a certain conditions or maximum time exceeded before throwing "NoSuchElementException".
+
+Page Object Model: POM is a design pattern for creating an Object directory for Web UI elements. 
+
+No SuchElement Expection: If an element coulnot found
+
+ElementNotVisible Exception: Existing element in DOM has a feature set as hidden
+
+TimeoutException: The element searched wasn't found in the specified time
+
+Try-catch: This method can catch exceptions. Try command indicates the start of the block and Catch is placed at the end of the block.
+
+Throw: The throw keyword is used to throw Exception to handle it in the run time. 
+
+Finally: It is the final code that helps you to executes irrespective of the occurance of an exception
+
+RTM: Is a document which links requirements to test cases.
+
+Test Plan: Is a docuemnt detailing the objectives, resources and processes for a specific Test and contains a detailed understanding of eventual workflow.
+
+Configuration Management: Covers the processes used to co-ordinate, control, and take test artifacts
+
+Smoke Testing: The objective of smoke testing is to test all critical funcationalies of the program are working properly.
+
+Sanity Testing: It verifies and validates the conformity of the new functionalities in the existing code.
+
+Defect Rejection Ratio: No.of defects rejected/total no of issues reported*100
+Defect Leakage Ratio: No.of defects missed/total no of issues*100
+
+Bug Triage: Refers to the process of prioritizing bugs based on its severity, frequency and risk.
+
+Test Lead: A Test lead leads the team of testers to meet the product goals to acheive the organization goals.
+
+Quality Manager: A quality manager ensures the quality of products or services or processess of an organization are properly maintained and meet customer's requirements.
+
+Test Case: A Test case is a set of conditions or actions that are performed on the software application
+
+Boundary Testing: Is the process of testing on boundries between partitions of the input values.
+
+Equivalance Partitioning: Is type of black box testing technique which can be applied to all levels of software testing unit. In this technique input data units are divided into
+equivalent partitions that can be used to derive test cases which reduces time required for Testing becuase of small number of test cases.
+
+Types of Testing: Functional/Non Functional/Maintenance
+
+Funtional Testing: Unit Testing/Sanity, Smoke/Integration/White or Black Box Testing/UAT/Regression Testing
+
+STLC: Requirments Analysis/Test Planning/Test Cases Desgin/Test Environment Setup/Test Execution/Test Closure
+
+Format of Test Case: Test Case iD/Test Scenario/Test Steps/Test Data/Expected Result/Actual Result/Pass or Fail
+
+TestNG: TestNG is an automation framework in which NG stands for Next Generation. 
+
+Invocation count: The same test case can be used multiple times.
+
+Selenium Framework: Framework helps to make code maintenance easy.
+
+Data Driven: In this framework, all our test data is generated from external files like excel, csv, xml or some database table.
+Keyword Driven: All the operations and instructions are written in some external files like excel worksheet.
+Hybrid: Its a concept where we are using advantages of both data driven and keyword
+
+Metrics: Software Testing metrics is a quantitative measure that helps in estimating progress, quality and well being of the software testing efforts.
+
+Turito: Turito is a revolutionary online coaching app for individual students who are aspirants for IITJEE and Neet and also competitive exams.
+
+Tutito caters all educational needs for individual students for both online and ofline methods. 
+
+TeachNext: TN is a optimal digital class room solutions and which consist of award winning content and innovative tools and assessments to make the classroom learning in a fun place.
+
+Specific Parametarization for TestNG: By using @Data Provider annoation we can parametarize values.
+
+To run selected test cases in TestNG: BY using Groups we can run.
+
+To Skip particular test case in TestnG from execution: By using "enabled=false" annotation
+
+How to include and exclude test methods from automation framework: By using include and exclude
+
+Invocation Count: Will execute same test case in multiple times.
+
+Jenkins:
+
+Continous Integration: The practice of merging development work with the main branch constantly.
+
+Continuous Delivery: Continual delivery of code to an environment once the code is ready to ship. 
+
+Continous Deployment: The deployment or release of code to the production as soon as its ready.
+
+Jenkins Master and Slave Acrchitecture: 
+
+Master: Schedule build jobs. Dispatch builds to the slaves for the actual job execution. Monitor the slaves and record the build results.
+Can also execute build jobs directly.
+Slave: Execute build job dispatched by the master. Slaves are computers that are set up to build projects for  a Master.
+
+Node: Node is used to refer to all machines that are part of Jenkins grid, slaves and master.
+
+Executor: Is a separate stream of builds to be run on a node in parallel.A node can have one or more executors.
+
+Maven pom.xml file:
+
+Describe the software project being build, including
+
+- The dependencies on other external modules
+- The directory structures.
+- The required plugins.
+- The predefined targets for performing certain tasks such as compilation and packaging.
+
+Different phases in Maven Build LifeCycle:
+
+Validate: Validate the project is correct and all necessary information is available.
+
+Compile: Compile the source code of the project.
+
+Test: Test the compiled source code using a suitable unit testing framework.
+
+Package: Take the compiled code and package it in its distributable format.
+
+Verify: Run any checks on results of integration tests to ensure quality criteria are met.
+
+install: Install the package into the local repository, for use as a dependency in other projects locally.
+
+deploy: Copy teh final package to the remote repository for sharing with other developers and projects.
+
+Source Control Polling in Jenkins
+
+Checking for existing SSH keys:
+
+https://help.github.com/articles/checking-for-existing-ssh-keys/
+
+
+Build Triggers:
+
+1) Trigger builds remotely
+
+2) Build after other projects are built
+
+3) Build Perioically (Scheduled builds) - Very long running build jobs where quick feeback is less critical. Perfomance tests take several hours to run
+
+4) Poll SCM
+
+Jenkins GitHub Plugin:
+https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Plugin
+
+
+
+TestNG Hierarchy:
+
+Test Suite > Test Folder (Shell) < Test Cases
+
+Exclude command exclude particular method from execution
+
+Include command includes particular method for execution
+
+Test NG Annotations:
+
+BeforeTest: It will execute first no matter which class we place. 
+
+AfterTest: It will execute only at the end
+
+BeforeSuite: It will execute first in the package irrespective of files
+
+AfterSuite: It will execute last
+
+BeforeMethod: Executes first winthin the class if there are multiple methods present
+
+AfterMethod: Executes last within the class if there are multiple methods present
+
+TestNG: Till 138 completed.
+
+By using Groups we can select desired test cases for execution
+
+
+Dependsonmethos: Used to execute specified method
+
+@Test(depndsOnMethods={"Method Name"})
+
+enabled = false: Skips from execution
+
+@Test(timeOut=400) - Useful for tests which are taking more time
+
+Parameterising from TestNG xml file
+
+XML:
+
+Syntax: <parameter name="URL" value = "websitepath"/>
+
+Method:
+
+Syntax: @Parameters({"URL"})
+
+Completed upto 141
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
